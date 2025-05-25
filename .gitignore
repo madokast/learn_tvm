@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+tvm/
+cmake3.31.7/
+llvm15/
+llvm-project/
+
 # C extensions
 *.so
 
