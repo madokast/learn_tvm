@@ -36,16 +36,16 @@ export LLVM_CONFIG=/usr/bin/llvm-config-15
 ## 编译 llvm
 
 git clone https://github.com/llvm/llvm-project.git
+cd llvm-project
 git checkout -b release/20.x origin/release/20.x
 mkdir build
 cd build
 cmake -G "Unix Makefiles" ../llvm \
-  -DCMAKE_C_COMPILER=/usr/bin/clang-15 \
-  -DCMAKE_CXX_COMPILER=/usr/bin/clang++-15 \
   -DCMAKE_BUILD_TYPE=Release \
   -DLLVM_ENABLE_PROJECTS="clang;lld;lldb;polly;mlir;openmp" \
   -DCMAKE_INSTALL_PREFIX=/usr/local/llem-20
 make -j$(nproc)
+make install
 
 ## 编译
 
