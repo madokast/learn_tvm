@@ -51,5 +51,16 @@ make install
 
 按照 https://tvm.apache.org/docs/install/from_source.html 进行配置
 
+最后设置 PYTHON 目录即可
 
+```bash
+export TVM_HOME=/home/mdk/repo/learn_tvm/tvm
+export PYTHONPATH=$TVM_HOME/python:$PYTHONPATH
+```
 
+或者 pip 开发者模式安装，也可以去掉 -e 全量安装，这样容易跳转到 python 代码实现
+
+```bash
+export TVM_LIBRARY_PATH=/home/mdk/repo/learn_tvm/tvm/build
+pip install -e /home/mdk/repo/learn_tvm/tvm/python
+```
