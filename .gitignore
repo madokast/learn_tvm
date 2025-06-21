@@ -5,6 +5,7 @@ __pycache__/
 
 tvm/
 cmake3.31.7/
+cmake_pkg/
 llvm15/
 llvm-project/
 
