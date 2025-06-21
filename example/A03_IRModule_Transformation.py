@@ -3,7 +3,7 @@ python -m example.A03_IRModule_Transformatio
 """
 import tvm
 from tvm import relax
-from example.A02_IRModule import mod_from_torch, params_from_torch, input
+from A02_IRModule import mod_from_torch, params_from_torch, input
 
 mod = mod_from_torch
 params = params_from_torch["main"]

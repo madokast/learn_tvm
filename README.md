@@ -104,18 +104,7 @@ set(USE_CUTLASS OFF)
 
 ## 安装
 
-先安装 python 3.11/3.12，然后全局安装 uv
-
-之后到 example 下 uv sync 即可
-
-下面的过程可以省略
-
-设置 PYTHON 目录即可
-
-```bash
-export TVM_HOME=/home/mdk/repo/learn_tvm/tvm
-export PYTHONPATH=$TVM_HOME/python:$PYTHONPATH
-```
+先安装 python 3.11/3.12，创建虚拟环境
 
 或者 pip 开发者模式安装，也可以去掉 -e 全量安装，这样容易跳转到 python 代码实现
 
@@ -127,8 +116,8 @@ pip install -e /home/mdk/repo/learn_tvm/tvm/python
 验证安装成功
 
 ```bash
-(learn-tvm) mdk@sics-piod-zrx:~/repo/learn_tvm/example$ python -c "import tvm; print(tvm.__file__)"
+python -c "import tvm; print(tvm.__file__)"
 /home/mdk/repo/learn_tvm/tvm/python/tvm/__init__.py
-(learn-tvm) mdk@sics-piod-zrx:~/repo/learn_tvm/example$ python -c "import tvm; print(tvm.base._LIB)"
+python -c "import tvm; print(tvm.base._LIB)"
 <CDLL '/home/mdk/repo/learn_tvm/tvm/build/libtvm.so', handle 2a24d10 at 0x7f5eef248140>
 ```
