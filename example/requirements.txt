@@ -1,0 +1,18 @@
+cloudpickle==3.1.1
+filelock==3.13.1
+fsspec==2024.6.1
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+ml_dtypes==0.5.1
+mpmath==1.3.0
+networkx==3.3
+numpy==2.3.1
+packaging==25.0
+psutil==7.0.0
+scipy==1.15.3
+setuptools==70.2.0
+sympy==1.13.3
+torch==2.7.1+cpu
+tornado==6.5.1
+tvm @ file:///home/mdk/repo/learn_tvm/tvm/python
+typing_extensions==4.14.0
