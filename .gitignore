@@ -8,6 +8,7 @@ cmake3.31.7/
 cmake_pkg/
 llvm15/
 llvm-project/
+example/TinyLlama-1.1B-Chat-v1.0/
 
 # C extensions
 *.so
