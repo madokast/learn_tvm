@@ -387,7 +387,7 @@ with target:
 #
 
 # git clone https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
-HF_WEIGHT_PATH = Path("TinyLlama-1.1B-Chat-v1.0/")
+HF_WEIGHT_PATH = Path(__file__).parent / "TinyLlama-1.1B-Chat-v1.0/"
 
 import numpy as np
 import safetensors.torch
@@ -455,7 +455,7 @@ from transformers import AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained(HF_WEIGHT_PATH)
 messages = [
-    {"role": "user", "content": "What's your name?"},
+    {"role": "user", "content": "What's two pluse three in digit?"},
 ]
 prompt = tokenizer.apply_chat_template(messages)
 input_len = len(prompt)
