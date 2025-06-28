@@ -26,9 +26,9 @@ class LlamaConfig:
     """
     模型配置 model configuration
     """
-    hidden_size: int = 2048
+    hidden_size: int = 2048 # 也是 embedding size
     intermediate_size: int = 5632
-    num_attention_heads: int = 32
+    num_attention_heads: int = 32 # 32个注意力头 多头注意力机制（Multi-Head Attention）
     num_hidden_layers: int = 22
     rms_norm_eps: float = 1e-05
     vocab_size: int = 32000
